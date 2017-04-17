@@ -1,11 +1,11 @@
 {
-  "name": "anti-alias-sequence",
+  "name": "interpolated-sequence",
   "description": "",
   "author": "Damon Zucconi",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dzucconi/anti-alias-sequence"
+    "url": "https://github.com/dzucconi/interpolated-sequence"
   },
   "scripts": {
     "test": "mocha test",
