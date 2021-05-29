@@ -1,4 +1,3 @@
-# Numerous always-ignore extensions
 *.diff
 *.err
 *.orig
@@ -9,8 +8,6 @@
 *.vi
 *~
 *.sass-cache
-
-# OS or Editor folders
 .DS_Store
 .cache
 .project
@@ -18,13 +15,6 @@
 .tmproj
 nbproject
 Thumbs.db
-
-# NPM packages folder.
 node_modules/
-
-# Brunch output folder.
-public/
-
-# Secrets
-.env
-.s3config
+dist/
+.parcel-cache/
