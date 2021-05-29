@@ -4,6 +4,14 @@ import { uid } from "./lib/uid";
 import { rand } from "./lib/rand";
 import { tag } from "./lib/dom";
 
+const { params } = configure({
+  fps: 60,
+  amount: 10,
+  offset: 1,
+  step: 1,
+  randomize: false,
+});
+
 const DOM = {
   app: document.getElementById("root"),
 };
@@ -50,14 +58,6 @@ const update = ([id, ctx]: [string, CanvasRenderingContext2D]) => {
   ctx.clearRect(0, 0, DOM[id].width, DOM[id].height);
   ctx.fillText(String(STATE[id]), DOM[id].width / 2, DOM[id].height / 2);
 };
-
-const { params } = configure({
-  fps: 60,
-  amount: 10,
-  offset: 1,
-  step: 1,
-  randomize: false,
-});
 
 const create = creator(
   Math.min(window.innerWidth / params.amount, window.innerHeight)
